@@ -1,0 +1,225 @@
+{
+  "name": "todo-rest",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": {
+      "version": "3.3.3",
+      "dependencies": {
+        "connect": {
+          "version": "2.8.3",
+          "dependencies": {
+            "qs": {
+              "version": "0.6.5"
+            },
+            "formidable": {
+              "version": "1.0.14"
+            },
+            "bytes": {
+              "version": "0.2.0"
+            },
+            "pause": {
+              "version": "0.0.1"
+            },
+            "uid2": {
+              "version": "0.0.2"
+            }
+          }
+        },
+        "commander": {
+          "version": "1.2.0",
+          "dependencies": {
+            "keypress": {
+              "version": "0.1.0"
+            }
+          }
+        },
+        "range-parser": {
+          "version": "0.0.4"
+        },
+        "mkdirp": {
+          "version": "0.3.5"
+        },
+        "cookie": {
+          "version": "0.1.0"
+        },
+        "buffer-crc32": {
+          "version": "0.2.1"
+        },
+        "fresh": {
+          "version": "0.1.0"
+        },
+        "methods": {
+          "version": "0.0.1"
+        },
+        "send": {
+          "version": "0.1.2",
+          "dependencies": {
+            "mime": {
+              "version": "1.2.9"
+            }
+          }
+        },
+        "cookie-signature": {
+          "version": "1.0.1"
+        },
+        "debug": {
+          "version": "0.7.2"
+        }
+      }
+    },
+    "mongodb": {
+      "version": "1.3.11",
+      "dependencies": {
+        "bson": {
+          "version": "0.1.9"
+        },
+        "kerberos": {
+          "version": "0.0.3"
+        }
+      }
+    },
+    "jade": {
+      "version": "0.32.0",
+      "dependencies": {
+        "commander": {
+          "version": "1.2.0",
+          "dependencies": {
+            "keypress": {
+              "version": "0.1.0"
+            }
+          }
+        },
+        "mkdirp": {
+          "version": "0.3.5"
+        },
+        "transformers": {
+          "version": "2.0.1",
+          "dependencies": {
+            "promise": {
+              "version": "2.0.0",
+              "dependencies": {
+                "is-promise": {
+                  "version": "1.0.0"
+                }
+              }
+            },
+            "css": {
+              "version": "1.0.8",
+              "dependencies": {
+                "css-parse": {
+                  "version": "1.0.4"
+                },
+                "css-stringify": {
+                  "version": "1.0.5"
+                }
+              }
+            },
+            "uglify-js": {
+              "version": "2.2.5",
+              "dependencies": {
+                "source-map": {
+                  "version": "0.1.25",
+                  "dependencies": {
+                    "amdefine": {
+                      "version": "0.0.5"
+                    }
+                  }
+                },
+                "optimist": {
+                  "version": "0.3.7",
+                  "dependencies": {
+                    "wordwrap": {
+                      "version": "0.0.2"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "character-parser": {
+          "version": "1.0.2"
+        },
+        "monocle": {
+          "version": "0.1.48",
+          "dependencies": {
+            "readdirp": {
+              "version": "0.2.5",
+              "dependencies": {
+                "minimatch": {
+                  "version": "0.2.12",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.3.0"
+                    },
+                    "sigmund": {
+                      "version": "1.0.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "with": {
+          "version": "1.1.0",
+          "dependencies": {
+            "uglify-js": {
+              "version": "2.3.6",
+              "dependencies": {
+                "async": {
+                  "version": "0.2.9"
+                },
+                "source-map": {
+                  "version": "0.1.25",
+                  "dependencies": {
+                    "amdefine": {
+                      "version": "0.0.5"
+                    }
+                  }
+                },
+                "optimist": {
+                  "version": "0.3.7",
+                  "dependencies": {
+                    "wordwrap": {
+                      "version": "0.0.2"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "constantinople": {
+          "version": "1.0.1",
+          "dependencies": {
+            "uglify-js": {
+              "version": "2.3.6",
+              "dependencies": {
+                "async": {
+                  "version": "0.2.9"
+                },
+                "source-map": {
+                  "version": "0.1.25",
+                  "dependencies": {
+                    "amdefine": {
+                      "version": "0.0.5"
+                    }
+                  }
+                },
+                "optimist": {
+                  "version": "0.3.7",
+                  "dependencies": {
+                    "wordwrap": {
+                      "version": "0.0.2"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
