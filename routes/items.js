@@ -8,7 +8,7 @@ mongoClient.open(function(err, mongoClient) {
     db = mongoClient.db("todo_db");
     db.collection('items', {strict:true}, function(err, collection) {
         if (err) {
-            console.log("The 'employees' collection doesn't exist. Creating it with sample data...");
+            console.log("The 'items' collection doesn't exist. Creating it with sample data...");
             populateDB();
         }
     });
@@ -38,8 +38,8 @@ exports.findAll = function(req, res) {
 
 exports.create = function(req, res) {
     var item = {
-        text: req.param('text'),
-        done: req.param('done') === "true"
+        text: req.body.text,
+        done: req.body.done === "true"
     };
     console.log('create: ' + item);
     db.collection('items', function(err, collection) {
@@ -47,14 +47,14 @@ exports.create = function(req, res) {
             console.log("created: ", result)
             res.jsonp(item);
         });
-    });
+    });        
 }
 
 exports.update = function (req, res) {
     var id = req.params.id;
     console.log('update: ', id);
     db.collection('items', function(err, collection) {
-        collection.update({_id: new ObjectID(id)}, {$set: {text: req.param('text'), done: req.param('done') === "true"}}, {safe:true}, function(err, result) {
+        collection.update({_id: new ObjectID(id)}, {$set: {text: req.body.text, done: req.body.done === "true"}}, {safe:true}, function(err, result) {
             console.log("updated: ", result)
             res.jsonp(result);
         });
@@ -82,7 +82,7 @@ exports.destroy = function (req, res) {
 // You'd typically not find this code in a real-life app, since the database would already exist.
 var populateDB = function() {
  
-    console.log("Populating employee database...");
+    console.log("Populating todo database...");
     var items = [
         {"id": 1, done: false, text: "test items"}
     ];
